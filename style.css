@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 16px;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(228, 39%, 23%);
+}
+
+.open {
+    display: block;
+}
+
+.open .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.overlay ul li:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#menu-close {
+    display: none;
+}
+
+.cta-button {
+    color: #fff;
+    background-color: hsl(12, 88%, 59%);
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+}
+
+.cta-button:hover {
+    opacity: 0.5;
+}
+
+p {
+    margin: 1rem 0;
+    color: hsl(227, 12%, 61%);
+}
+
+.bg-tablet-pattern {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.bg-tablet-pattern-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bg-tablet-pattern-left img {
+    margin-left: -50%;
+    margin-top: 40%;
+}
+
+.headline {
+    background-color: hsl(13, 100%, 96%);
+    border-radius: 2rem;
+    font-weight: 700;
+}
+
+.headline span {
+    background-color: hsl(12, 88%, 59%);
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+}
+
+.points ul li {
+    border-color: hsl(12, 88%, 59%);
+}
+
+.points ul li.active {
+    background-color: hsl(12, 88%, 59%);
+}
+
+.box {
+    background-color: hsl(12, 88%, 59%);
+}
+
+.box button {
+    color: hsl(12, 88%, 59%);
+    background-color: #fff;
+}
+
+.box button:hover {
+    opacity: 0.5;
+}
+
+.box img.mobile {
+    height: 80%;
+    top: 10%;
+}
+
+.box img.desktop {
+    left: 10%;
+    top: -10%;
+}
+
+footer {
+    background-color: hsl(228, 39%, 23%);
+}
+
+footer ul li:hover {
+    color: hsl(12, 88%, 59%);
+    cursor: pointer;
+}
+
+footer .copyright {
+    color: hsl(227, 12%, 61%);
+}
+
+footer input {
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+}
+
+footer ul li:hover svg path {
+    fill: hsl(12, 88%, 59%);
+    cursor: pointer;
+}
+
+footer svg path.logo-text {
+    fill: #fff;
+    color: #fff;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 640px) {
+    .headline {
+        background-color: transparent;
+    }
+}
